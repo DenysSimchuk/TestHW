@@ -1,0 +1,15 @@
+При обраних параметрах:
+
+Number of Threads 2000
+Ramp-up period 2
+Loop Count 3
+
+Веб сервіс при запиті GET видає статус код 403
+ 
+При тестуванні запитів GET, POST, PUT, PATCH, DELETE
+
+Duration Assertion не більше 1000
+Size Assertion менше ніж 1340
+Response Assertion 200
+
+Всі тести проходять успішно, окрім тестування GET.

@@ -1,0 +1,15 @@
+При обраних параметрах:
+
+Number of Threads 1
+Ramp-up period 10
+Loop Count 3
+
+Веб сервіс працює нормально 
+ 
+При тестуванні запитів GET, POST, PUT, PATCH, DELETE
+
+Duration Assertion не більше 1000
+Size Assertion менше ніж 1340
+Response Assertion 200
+
+Всі тести проходять успішно, помилок не виявлено.
