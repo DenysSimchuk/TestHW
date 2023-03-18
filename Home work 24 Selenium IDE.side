@@ -1,0 +1,279 @@
+{
+  "id": "81ceec7d-df41-4738-ba5b-975fc5180643",
+  "version": "2.0",
+  "name": "Home work 24",
+  "url": "https://anitube.in.ua/",
+  "tests": [{
+    "id": "adb580a6-8dcc-4e0d-8efd-e76c93328763",
+    "name": "Test of search",
+    "commands": [{
+      "id": "4b39350a-43d0-4b05-9c89-347decb7af92",
+      "comment": "",
+      "command": "open",
+      "target": "https://anitube.in.ua/",
+      "targets": [],
+      "value": "https://anitube.in.ua/"
+    }, {
+      "id": "ce6685f5-b974-4732-b5e1-5efcd6352cf9",
+      "comment": "",
+      "command": "click",
+      "target": "//div[contains(@class, \"simt\")]",
+      "targets": [],
+      "value": "//div[contains(@class, \"simt\")]"
+    }, {
+      "id": "24087057-75dd-4ee6-b134-4a806b20686a",
+      "comment": "",
+      "command": "type",
+      "target": "css=#ajax_search",
+      "targets": [
+        ["id=ajax_search", "id"],
+        ["name=story", "name"],
+        ["css=#ajax_search", "css:finder"],
+        ["xpath=//input[@id='ajax_search']", "xpath:attributes"],
+        ["xpath=//div[@id='header_menu']/div/div[2]/div[3]/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "атака титанів"
+    }, {
+      "id": "7a43bb2d-be42-4327-9d95-cdeae3478649",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "//input[@id='ajax_search']",
+      "targets": [
+        ["id=ajax_search", "id"],
+        ["name=story", "name"],
+        ["css=#ajax_search", "css:finder"],
+        ["xpath=//input[@id='ajax_search']", "xpath:attributes"],
+        ["xpath=//div[@id='header_menu']/div/div[2]/div[3]/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "3ba0f80e-fa47-43d0-b024-6d261a08b180",
+      "comment": "",
+      "command": "click",
+      "target": "//*[@id=\"dle-content\"]/article[3]/div/div/h2/a",
+      "targets": [
+        ["css=.story:nth-child(5) h2 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Атака титанів (1 сезон)')]", "xpath:link"],
+        ["xpath=//div[@id='dle-content']/article[3]/div/div/h2/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://anitube.in.ua/1759-na-by-proti-titanv.html')]", "xpath:href"],
+        ["xpath=//article[3]/div/div/h2/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7784a7cf-0fb3-4f7b-a4ca-46b3d6c70fa1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.rcol > h2",
+      "targets": [
+        ["css=.rcol > h2", "css:finder"],
+        ["xpath=//div[@id='dle-content']/article/div/div/div[2]/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "538f3986-1a85-4312-ba23-6c5e68f757a1",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Детально про реліз",
+      "targets": [
+        ["linkText=Детально про реліз", "linkText"],
+        ["css=.story_link > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Детально про реліз')]", "xpath:link"],
+        ["xpath=//a[@onclick='baner1(); return false;']", "xpath:attributes"],
+        ["xpath=//div[@id='dle-content']/article/div/div/div/div/span[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//div/span[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Детально про реліз')]", "xpath:innerText"]
+      ],
+      "value": "Детально про реліз"
+    }]
+  }, {
+    "id": "69e22278-7d43-49cd-baf7-7b1e92147265",
+    "name": "Test of video run",
+    "commands": [{
+      "id": "00df33d1-631d-4acf-a7f8-e4859d21062a",
+      "comment": "",
+      "command": "open",
+      "target": "https://anitube.in.ua/",
+      "targets": [],
+      "value": "https://anitube.in.ua/"
+    }, {
+      "id": "591c5a2b-39f6-4a27-8d63-0ae780566033",
+      "comment": "",
+      "command": "click",
+      "target": "//div[contains(@class, \"simt\")]",
+      "targets": [],
+      "value": "//div[contains(@class, \"simt\")]"
+    }, {
+      "id": "c234bb09-f525-49a2-aac8-8c522f96f52d",
+      "comment": "",
+      "command": "type",
+      "target": "css=#ajax_search",
+      "targets": [
+        ["id=ajax_search", "id"],
+        ["name=story", "name"],
+        ["css=#ajax_search", "css:finder"],
+        ["xpath=//input[@id='ajax_search']", "xpath:attributes"],
+        ["xpath=//div[@id='header_menu']/div/div[2]/div[3]/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "атака титанів"
+    }, {
+      "id": "6b904042-95b1-4fac-8689-dbbf4fc0a1df",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "//input[@id='ajax_search']",
+      "targets": [
+        ["id=ajax_search", "id"],
+        ["name=story", "name"],
+        ["css=#ajax_search", "css:finder"],
+        ["xpath=//input[@id='ajax_search']", "xpath:attributes"],
+        ["xpath=//div[@id='header_menu']/div/div[2]/div[3]/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "c3621e6f-e7a0-4407-a14a-ba2aa60a91a1",
+      "comment": "",
+      "command": "click",
+      "target": "//*[@id=\"dle-content\"]/article[3]/div/div/h2/a",
+      "targets": [
+        ["css=.story:nth-child(5) h2 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Атака титанів (1 сезон)')]", "xpath:link"],
+        ["xpath=//div[@id='dle-content']/article[3]/div/div/h2/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://anitube.in.ua/1759-na-by-proti-titanv.html')]", "xpath:href"],
+        ["xpath=//article[3]/div/div/h2/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06be146c-decc-4541-9192-d152b1b26bda",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.trailer_preview_overlay > h3",
+      "targets": [
+        ["css=.trailer_preview_overlay > h3", "css:finder"],
+        ["xpath=//div[@id='dle-content']/article/div/div/div[2]/a/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//div/div/div/h3", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "214c7524-cec7-42d6-b17c-72ae33414831",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.serie-active",
+      "targets": [
+        ["css=.serie-active", "css:finder"],
+        ["xpath=//div[@onclick='return RalodePlayer.zborka(0,this);']", "xpath:attributes"],
+        ["xpath=//div[@id='rl-lenta-top']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": "ПЛЕЄР TRG (НОВЕ)"
+    }, {
+      "id": "75486488-4281-4782-9408-cf332d3c35cd",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "003b9f1f-a045-4326-9643-bae1efbbd3c4",
+      "comment": "",
+      "command": "click",
+      "target": "//pjsdiv[@id='oframevideoplayer72333']/pjsdiv[16]/pjsdiv/pjsdiv",
+      "targets": [
+        ["css=pjsdiv:nth-child(18) > pjsdiv:nth-child(1) > pjsdiv", "css:finder"],
+        ["xpath=//pjsdiv[@id='oframevideoplayer72333']/pjsdiv[16]/pjsdiv/pjsdiv", "xpath:idRelative"],
+        ["xpath=//pjsdiv[16]/pjsdiv/pjsdiv", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "674fec18-4d01-4fdf-8235-2d33f6a72fba",
+    "name": "Restore password",
+    "commands": [{
+      "id": "ed2ad66e-da68-4162-a76b-eed2ebb1b612",
+      "comment": "",
+      "command": "open",
+      "target": "https://anitube.in.ua/",
+      "targets": [],
+      "value": "https://anitube.in.ua/"
+    }, {
+      "id": "f7c17224-5d8c-4551-8104-46659df5fb7b",
+      "comment": "",
+      "command": "click",
+      "target": "//*[contains(text(),\"Відновити\")]",
+      "targets": [],
+      "value": "//*[contains(text(),\"Відновити\")]"
+    }, {
+      "id": "67c1d40a-3f93-4911-ae47-163ef96a139c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=tr:nth-child(1) > .label",
+      "targets": [
+        ["css=tr:nth-child(1) > .label", "css:finder"],
+        ["xpath=//div[@id='dle-content']/form/div/table/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Ваш логін або E-Mail на сайті:')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "62dac288-3d94-431a-b4c7-edca5b9fa22d",
+      "comment": "",
+      "command": "click",
+      "target": "//*[contains(@name,\"lostname\")]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14da8d8e-af28-4679-82bd-4c0db31703b7",
+      "comment": "",
+      "command": "type",
+      "target": "//*[contains(@name,\"lostname\")]",
+      "targets": [],
+      "value": "fsdhfhkjsbdf@gmail.com"
+    }, {
+      "id": "4ffe150c-c6f7-4058-8079-74b7ad42baf7",
+      "comment": "",
+      "command": "click",
+      "target": "//*[contains(@class,\"fbutton\")]",
+      "targets": [],
+      "value": "//*[contains(@class,\"fbutton\")]"
+    }, {
+      "id": "1f8d282b-1e17-47af-b140-4c487fd2056f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=a:nth-child(5)",
+      "targets": [
+        ["css=a:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Повернутися назад')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'javascript:history.go(-1)')]", "xpath:href"],
+        ["xpath=//div[5]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3410384b-cfb0-496d-b7ba-b1618f756c26",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=i",
+      "targets": [
+        ["css=i", "css:finder"],
+        ["xpath=//i", "xpath:position"],
+        ["xpath=//i[contains(.,'Увага! Виявлено помилку')]", "xpath:innerText"]
+      ],
+      "value": "Увага! Виявлено помилку"
+    }]
+  }],
+  "suites": [{
+    "id": "8f7f4547-8fc2-473b-86b6-e9b0f893f540",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["adb580a6-8dcc-4e0d-8efd-e76c93328763"]
+  }],
+  "urls": ["https://shop.silpo.ua/", "https://novus.online/en", "https://anitube.in.ua/"],
+  "plugins": []
+}
